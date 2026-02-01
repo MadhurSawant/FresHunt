@@ -1,0 +1,244 @@
+/* ---------- Wrapper ---------- */
+
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  background-color: beige;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* LEFT | CENTER | RIGHT */
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 18px;
+  gap: 16px;
+  background-color: beige;
+}
+
+/* ---------- LEFT: Brand + Location ---------- */
+
+
+/* Brand */
+.freshhunt-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #006d3b !important;
+  text-transform: uppercase;
+}
+
+/* Location dropdown */
+.location-dropdown {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.location-select {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  padding: 2px 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #444;
+  margin-left: 12px;
+}
+
+.location-select {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  padding: 2px 6px;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.location-select:focus {
+  box-shadow: none;
+}
+
+.location-select option {
+  color: #333;
+}
+
+/* ---------- CENTER: Search Bar ---------- */
+.nav-center {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 650px;
+}
+
+.search-bar .form-control {
+  border-radius: 20px 0 0 20px !important;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+}
+
+.search-bar .btn {
+  background-color: #198754;
+  color: #fff;
+  border-radius: 0 20px 20px 0 !important;
+  border: 1px solid #198754;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- RIGHT: Nav Links ---------- */
+.nav-right .nav-item {
+  color: #333 !important;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  transition: color .15s ease;
+}
+
+.nav-right .nav-item:hover {
+  color: #198754 !important;
+}
+
+.cart-link {
+  font-weight: 700;
+}
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 991px) {
+  .location { display: none; }
+  .nav-center { max-width: 450px; }
+}
+
+@media (max-width: 767px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  .nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-center { display: none; } /* hide search on very small screens */
+  .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+/* 🔍 SEARCH AREA */
+.nav-search {
+  max-width: 550px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.input-group {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input {
+  border-radius: 30px 0 0 30px !important;
+  border: 1px solid #a7f3d0;
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  color: #065f46;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+  border-color: #22c55e;
+}
+
+.search-btn {
+  border-radius: 0 30px 30px 0 !important;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: linear-gradient(90deg, #16a34a, #15803d);
+  transform: scale(1.05);
+}
+
+/* 🔽 SUGGESTION DROPDOWN */
+.list-group {
+  background-color: #ffffff;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+  animation: dropdownFade 0.2s ease-in-out;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 14px;
+  transition: all 0.25s ease;
+  background-color: #fff;
+  color: #065f46;
+}
+
+.list-group-item:hover {
+  background-color: #ecfdf5;
+  transform: translateX(4px);
+}
+
+.list-group-item img {
+  border: 2px solid #a7f3d0;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover img {
+  border-color: #22c55e;
+  transform: scale(1.1);
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

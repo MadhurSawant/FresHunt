@@ -1,0 +1,166 @@
+/* ===============================
+   Stores Page Styles
+   =============================== */
+
+/* Page container */
+.stores-page {
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Banner */
+.stores-banner {
+  background: linear-gradient(90deg, #28a745, #20c997);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Content Layout */
+.stores-content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Store List */
+.stores-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  height: fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Dropdown + Location button */
+.stores-list select {
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+}
+
+.stores-list button {
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.stores-list button:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}
+
+/* Store Cards */
+.store-card {
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #28a745;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-left: 5px solid #20c997;
+}
+
+.store-card h6 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.store-card p {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* Reviews + Status */
+.store-card span.text-success {
+  font-weight: 600;
+}
+
+/* Directions Button */
+.store-card a {
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 4px 14px;
+  transition: all 0.2s ease-in-out;
+}
+.store-card a:hover {
+  background-color: #28a745;
+  color: #fff !important;
+}
+
+/* Map Section */
+.stores-map {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.8s ease;
+}
+
+/* Scrollbar Customization */
+.stores-list::-webkit-scrollbar {
+  width: 6px;
+}
+.stores-list::-webkit-scrollbar-thumb {
+  background: #28a745;
+  border-radius: 8px;
+}
+.stores-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   Responsive Design
+   =============================== */
+@media (max-width: 991px) {
+  .stores-content {
+    flex-direction: column;
+  }
+  .stores-map {
+    margin-top: 20px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stores-banner {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .store-card {
+    padding: 15px;
+  }
+  .store-card h6 {
+    font-size: 1rem;
+  }
+}

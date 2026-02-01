@@ -1,0 +1,174 @@
+/* ================= PRODUCT SECTION ================= */
+.product-section {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* ================= SWIPER FIX ================= */
+.product-section .swiper-slide {
+  max-width: 220px; /* Keep card width consistent */
+  display: flex;
+  height: auto;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  background: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333 !important;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #f5f5f5;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+  background: #bbb;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #28a745;
+  opacity: 1;
+}
+
+/* ================= PRODUCT CARD ================= */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Product Image */
+.product-img-wrapper {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 5px 0;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Description (optional) */
+.product-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 8px;
+  height: 36px; /* Limit height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Price */
+.product-price {
+  margin: 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #28a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.product-price .variant {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #888;
+}
+
+/* ================= ADD TO CART ================= */
+.add-btn {
+  background: #28a745;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #218838;
+}
+
+/* Counter Buttons */
+.counter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.counter-btn button {
+  background: #eee;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.counter-btn button:hover {
+  background: #ddd;
+}
+
+.counter-btn span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}

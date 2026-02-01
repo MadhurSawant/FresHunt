@@ -1,0 +1,185 @@
+/* Container */
+.loyalty-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.loyalty-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Card styling */
+.loyalty-card {
+  background: #f9fafc;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e1e5eb;
+}
+
+/* Points */
+.points {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #34495e;
+}
+.points span {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Tier with dynamic colors */
+.tier {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 12px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Dynamic tier colors */
+.tier.silver {
+  background: #ecf0f1;
+  color: #7f8c8d;
+  border: 1px solid #bdc3c7;
+}
+.tier.gold {
+  background: #fff6e5;
+  color: #d4a017;
+  border: 1px solid #f1c40f;
+}
+.tier.platinum {
+  background: #e5f4ff;
+  color: #2980b9;
+  border: 1px solid #3498db;
+}
+
+/* Button */
+.enroll-btn {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.enroll-btn:hover {
+  background: linear-gradient(135deg, #2ecc71, #3498db);
+  transform: translateY(-2px);
+}
+
+/* Loading / No data */
+.loading,
+.no-data {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+/* General container */
+.loyalty-container {
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.loyalty-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.loyalty-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.points {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.points span {
+  font-size: 1.5rem;
+  color: #2a9d8f;
+}
+
+/* --- Tier Colors --- */
+.tier {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.tier.bronze {
+  background: linear-gradient(135deg, #cd7f32, #a97142);
+  color: #fff;
+}
+
+.tier.silver {
+  background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+  color: #fff;
+}
+
+.tier.gold {
+  background: linear-gradient(135deg, #ffd700, #e6c200);
+  color: #000;
+}
+
+.tier.platinum {
+  background: linear-gradient(135deg, #e5e4e2, #cfd0d1);
+  color: #000;
+  border: 1px solid #b0b0b0;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2a9d8f;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background: #21867a;
+  transform: translateY(-2px);
+}
+
+.loading, .no-data {
+  font-size: 1rem;
+  color: #777;
+}
+

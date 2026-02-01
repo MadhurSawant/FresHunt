@@ -1,0 +1,98 @@
+/* Container */
+.orders-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.orders-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+/* Order list */
+.orders-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orders-container li {
+  background: #f9fafc;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #e1e5eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.orders-container li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Order ID */
+.orders-container strong {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+/* Status with dynamic colors */
+.orders-container .status {
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+/* Delivered = Green */
+.orders-container .status.delivered {
+  background: #eafaf1;
+  color: #27ae60;
+  border: 1px solid #2ecc71;
+}
+
+/* Pending = Orange */
+.orders-container .status.pending {
+  background: #fff6e5;
+  color: #d35400;
+  border: 1px solid #f39c12;
+}
+
+/* Cancelled = Red */
+.orders-container .status.cancelled {
+  background: #fdecea;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+/* Totals & items */
+.orders-container .total {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-top: 8px;
+}
+.orders-container .items {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  margin-top: 4px;
+}
+
+/* Empty state */
+.orders-container p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1rem;
+}

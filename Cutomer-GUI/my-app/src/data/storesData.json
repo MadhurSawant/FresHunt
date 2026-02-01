@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "FreshHunt AECS Store",
+    "address": "K No.571, AECS Layout, Bengaluru, Karnataka 560037",
+    "rating": 4.9,
+    "reviews": 550,
+    "lat": 12.9563,
+    "lng": 77.701,
+    "city": "Bengaluru",
+    "directions": "https://maps.google.com/?q=FreshHunt+AECS+Store"
+  },
+  {
+    "id": 2,
+    "name": "FreshHunt Haralur Store",
+    "address": "Unit No. 4, Opposite Fisherman’s Wharf, Haralur Road, Bengaluru",
+    "rating": 4.7,
+    "reviews": 420,
+    "lat": 12.8994,
+    "lng": 77.6515,
+    "city": "Bengaluru",
+    "directions": "https://maps.google.com/?q=FreshHunt+Haralur+Store"
+  },
+  {
+    "id": 3,
+    "name": "FreshHunt JP Nagar 8th Phase Store",
+    "address": "#81, Jambu Savari Dinne Rd, JP Nagar 8th Phase, Bengaluru",
+    "rating": 4.8,
+    "reviews": 500,
+    "lat": 12.8919,
+    "lng": 77.5856,
+    "city": "Bengaluru",
+    "directions": "https://maps.google.com/?q=FreshHunt+JP+Nagar+8th+Phase+Store"
+  },
+  {
+    "id": 4,
+    "name": "FreshHunt Andheri Store",
+    "address": "Andheri West, Mumbai, Maharashtra 400053",
+    "rating": 4.6,
+    "reviews": 380,
+    "lat": 19.1194,
+    "lng": 72.8467,
+    "city": "Mumbai",
+    "directions": "https://maps.google.com/?q=FreshHunt+Andheri+Store"
+  },
+  {
+    "id": 5,
+    "name": "FreshHunt Bandra Store",
+    "address": "Bandra West, Mumbai, Maharashtra 400050",
+    "rating": 4.7,
+    "reviews": 410,
+    "lat": 19.0591,
+    "lng": 72.8297,
+    "city": "Mumbai",
+    "directions": "https://maps.google.com/?q=FreshHunt+Bandra+Store"
+  },
+  {
+    "id": 6,
+    "name": "FreshHunt Dombivli East Store",
+    "address": "Sector 5, Dombivli East, Maharashtra 421201",
+    "rating": 4.5,
+    "reviews": 300,
+    "lat": 19.2177,
+    "lng": 73.0939,
+    "city": "Dombivli",
+    "directions": "https://maps.google.com/?q=FreshHunt+Dombivli+East+Store"
+  },
+  {
+    "id": 7,
+    "name": "FreshHunt Dombivli West Store",
+    "address": "Naya Nagar, Dombivli West, Maharashtra 421202",
+    "rating": 4.6,
+    "reviews": 320,
+    "lat": 19.2170,
+    "lng": 73.0833,
+    "city": "Dombivli",
+    "directions": "https://maps.google.com/?q=FreshHunt+Dombivli+West+Store"
+  },
+  {
+    "id": 8,
+    "name": "FreshHunt Thane West Store",
+    "address": "Ghodbunder Rd, Thane West, Maharashtra 400607",
+    "rating": 4.7,
+    "reviews": 450,
+    "lat": 19.2183,
+    "lng": 72.9781,
+    "city": "Thane",
+    "directions": "https://maps.google.com/?q=FreshHunt+Thane+West+Store"
+  },
+  {
+    "id": 9,
+    "name": "FreshHunt Thane East Store",
+    "address": "Wagle Estate, Thane East, Maharashtra 400604",
+    "rating": 4.6,
+    "reviews": 430,
+    "lat": 19.2180,
+    "lng": 73.0112,
+    "city": "Thane",
+    "directions": "https://maps.google.com/?q=FreshHunt+Thane+East+Store"
+  },
+  {
+    "id": 10,
+    "name": "FreshHunt Connaught Place Store",
+    "address": "Connaught Place, New Delhi, Delhi 110001",
+    "rating": 4.5,
+    "reviews": 360,
+    "lat": 28.6328,
+    "lng": 77.2197,
+    "city": "Delhi",
+    "directions": "https://maps.google.com/?q=FreshHunt+Connaught+Place+Store"
+  },
+  {
+    "id": 11,
+    "name": "FreshHunt Pune Camp Store",
+    "address": "Camp, Pune, Maharashtra 411001",
+    "rating": 4.6,
+    "reviews": 390,
+    "lat": 18.5204,
+    "lng": 73.8557,
+    "city": "Pune",
+    "directions": "https://maps.google.com/?q=FreshHunt+Pune+Camp+Store"
+  }
+]

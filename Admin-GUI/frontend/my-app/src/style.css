@@ -1,0 +1,265 @@
+/* src/style.css */
+
+/* --- Global Styles & Variables --- */
+:root {
+    --green: #22c55e;
+    --green-dark: #16a34a;
+    --blue: #3b82f6;
+    --blue-dark: #2563eb;
+    --red: #ef4444;
+    --red-dark: #dc2626;
+    --bg-light: #f3f4f6;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --border-color: #e5e7eb;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+    --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-dark);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* --- Base Button Styles --- */
+.btn {
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+    width: 100%;
+}
+
+/* --- Auth Page (Login/Register) --- */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.auth-back-button {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.auth-back-button:hover {
+    color: var(--green);
+}
+
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.auth-icon {
+    color: var(--green);
+}
+
+.auth-title {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 800;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.auth-input:focus {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+.btn-submit {
+    background-color: var(--green);
+    color: white;
+}
+.btn-submit:hover {
+    background-color: var(--green-dark);
+}
+
+.auth-toggle-text {
+    margin-top: 16px;
+    color: var(--text-light);
+}
+
+.auth-toggle-button {
+    background: none;
+    border: none;
+    color: var(--green);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+.auth-toggle-button:hover {
+    color: var(--green-dark);
+}
+
+/* --- Delivery Interface --- */
+.delivery-interface {
+    min-height: 100vh;
+    background-color: var(--bg-light);
+}
+
+.app-header {
+    background-color: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.app-header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo-icon {
+    color: var(--green);
+}
+.app-header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.app-header-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+}
+
+.btn-logout {
+    background-color: var(--red);
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    width: auto;
+}
+.btn-logout:hover {
+    background-color: var(--red-dark);
+}
+
+/* --- Navigation Tabs --- */
+.app-nav {
+    display: flex;
+    gap: 12px;
+    padding: 16px 24px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    margin-top: 1px;
+}
+
+.tab-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-light);
+    transition: all 0.2s ease;
+    position: relative;
+}
+.tab-button:hover {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+.tab-button.active {
+    background-color: var(--green);
+    color: white;
+    box-shadow: var(--shadow);
+}
+.tab-button.active .tab-badge {
+    background-color: var(--red);
+    color: white;
+}
+
+.tab-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--red);
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 2px solid white;
+}
+.tab-button.active .tab-badge {
+    border: 2px solid var(--green);
+}
+
+/* --- Main Content Area --- */
+.app-main {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* --- Order Card --- */
+.order-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* ... rest of the order card and OTP modal styles ... */
+/* Copy all the remaining CSS from your snippet */

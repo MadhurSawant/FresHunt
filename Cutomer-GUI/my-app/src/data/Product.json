@@ -1,0 +1,188 @@
+{
+  "vegetables": [
+    {
+      "id": 1,
+      "name": "Fresh Tomatoes",
+      "price": 60,
+      "oldPrice": 80,
+      "discount": 25,
+      "image": "/assets/vegetables/tomatoes.jpg",
+      "category": "vegetables",
+      "stock": 120,
+      "variants": [{ "type": "500g", "price": 35 }],
+      "description": "Juicy and fresh red tomatoes, perfect for salads and cooking."
+    },
+    {
+      "id": 2,
+      "name": "Spinach",
+      "price": 40,
+      "oldPrice": 55,
+      "discount": 27,
+      "image": "/assets/vegetables/spinach.jpg",
+      "category": "vegetables",
+      "stock": 100,
+      "variants": [{ "type": "500g", "price": 40 }],
+      "description": "Green leafy spinach, full of iron and nutrients."
+    },
+    {
+      "id": 3,
+      "name": "Potatoes",
+      "price": 30,
+      "oldPrice": 40,
+      "discount": 25,
+      "image": "/assets/vegetables/potatoes.jpg",
+      "category": "vegetables",
+      "stock": 200,
+      "variants": [{ "type": "500g", "price": 30 }],
+      "description": "Fresh potatoes, great for curries, fries, and more."
+    },
+    {
+      "id": 4,
+      "name": "Carrots",
+      "price": 45,
+      "oldPrice": 60,
+      "discount": 25,
+      "image": "/assets/vegetables/carrots.jpg",
+      "category": "vegetables",
+      "stock": 150,
+      "variants": [{ "type": "500g", "price": 45 }],
+      "description": "Crunchy orange carrots, rich in vitamin A."
+    },
+    {
+      "id": 5,
+      "name": "Cucumbers",
+      "price": 35,
+      "oldPrice": 50,
+      "discount": 30,
+      "image": "/assets/vegetables/cucumbers.jpg",
+      "category": "vegetables",
+      "stock": 110,
+      "variants": [{ "type": "500g", "price": 35 }],
+      "description": "Cool and refreshing cucumbers, ideal for salads."
+    }
+  ],
+  "fruits": [
+    {
+      "id": 6,
+      "name": "Bananas",
+      "price": 50,
+      "oldPrice": 70,
+      "discount": 29,
+      "image": "/assets/fruits/bananas.jpg",
+      "category": "fruits",
+      "stock": 200,
+      "variants": [{ "type": "500g", "price": 30 }],
+      "description": "Sweet and fresh bananas, rich in potassium and fiber."
+    },
+    {
+      "id": 7,
+      "name": "Apples",
+      "price": 120,
+      "oldPrice": 150,
+      "discount": 20,
+      "image": "/assets/fruits/apples.jpg",
+      "category": "fruits",
+      "stock": 150,
+      "variants": [{ "type": "500g", "price": 65 }],
+      "description": "Fresh and crunchy apples, packed with vitamins."
+    },
+    {
+      "id": 8,
+      "name": "Mangoes",
+      "price": 140,
+      "oldPrice": 180,
+      "discount": 22,
+      "image": "/assets/fruits/mangoes.jpg",
+      "category": "fruits",
+      "stock": 90,
+      "variants": [{ "type": "500g", "price": 140 }],
+      "description": "Sweet and juicy mangoes, the king of fruits."
+    },
+    {
+      "id": 9,
+      "name": "Oranges",
+      "price": 100,
+      "oldPrice": 130,
+      "discount": 23,
+      "image": "/assets/fruits/oranges.jpg",
+      "category": "fruits",
+      "stock": 130,
+      "variants": [{ "type": "500g", "price": 100 }],
+      "description": "Citrus-rich oranges, full of vitamin C."
+    },
+    {
+      "id": 10,
+      "name": "Grapes",
+      "price": 90,
+      "oldPrice": 110,
+      "discount": 18,
+      "image": "/assets/fruits/grapes.jpg",
+      "category": "fruits",
+      "stock": 140,
+      "variants": [{ "type": "500g", "price": 90 }],
+      "description": "Sweet seedless grapes, perfect for snacking."
+    }
+  ],
+  "meat": [
+    {
+      "id": 11,
+      "name": "Chicken Breast",
+      "price": 180,
+      "oldPrice": 220,
+      "discount": 18,
+      "image": "/assets/meat/chicken-breast.jpg",
+      "category": "meat",
+      "stock": 80,
+      "variants": [{ "type": "500g", "price": 180 }],
+      "description": "Skinless chicken breast, high in protein and perfect for grilling."
+    },
+    {
+      "id": 12,
+      "name": "Mutton Curry Cut",
+      "price": 350,
+      "oldPrice": 420,
+      "discount": 17,
+      "image": "/assets/meat/mutton.jpg",
+      "category": "meat",
+      "stock": 60,
+      "variants": [{ "type": "500g", "price": 350 }],
+      "description": "Fresh mutton curry cut, tender and flavorful."
+    },
+    {
+      "id": 13,
+      "name": "Prawns",
+      "price": 400,
+      "oldPrice": 480,
+      "discount": 17,
+      "image": "/assets/meat/prawns.jpg",
+      "category": "meat",
+      "stock": 70,
+      "variants": [{ "type": "500g", "price": 400 }],
+      "description": "Fresh prawns, ideal for curries and fried dishes."
+    },
+    {
+      "id": 14,
+      "name": "Eggs",
+      "price": 70,
+      "oldPrice": 90,
+      "discount": 22,
+      "image": "/assets/meat/eggs.jpg",
+      "category": "meat",
+      "stock": 300,
+      "variants": [{ "type": "500g", "price": 70 }],
+      "description": "Farm-fresh eggs, rich in protein."
+    },
+    {
+      "id": 15,
+      "name": "Fish Fillet",
+      "price": 250,
+      "oldPrice": 300,
+      "discount": 17,
+      "image": "/assets/meat/fish.jpg",
+      "category": "meat",
+      "stock": 100,
+      "variants": [{ "type": "500g", "price": 250 }],
+      "description": "Fresh fish fillets, perfect for grilling or frying."
+    }
+  ]
+}

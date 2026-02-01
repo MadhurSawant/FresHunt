@@ -1,0 +1,113 @@
+.order-container {
+  padding: 20px;
+  background: #f9fafa;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.order-tracking-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Progress Steps --- */
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 5px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 18px;
+}
+
+.step-icon.active {
+  background: #22c55e;
+  color: white;
+}
+
+.step-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #e5e7eb;
+  z-index: -1;
+}
+
+.step-line.active {
+  background: #22c55e;
+}
+
+.active-text {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* --- Items Section --- */
+.items-section h4,
+.delivery-section h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.items-section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* --- OTP Box --- */
+.otp-box {
+  margin-top: 15px;
+  background: #e9fbe9;
+  border: 2px dashed #22c55e;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.otp-label {
+  font-weight: 600;
+  color: #166534;
+}
+
+.otp-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #14532d;
+  margin: 5px 0;
+}
+
+.otp-note {
+  font-size: 13px;
+  color: #374151;
+}

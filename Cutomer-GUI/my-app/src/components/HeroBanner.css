@@ -1,0 +1,153 @@
+/*
+ * --------------------------------
+ * HERO SWIPER CONTAINER
+ * --------------------------------
+ */
+.hero-swiper-container {
+  width: 1000px;
+  height: 500px;          /* default height */
+  max-height: 550px;      /* cap for large screens */
+  overflow: hidden;
+  position: relative;
+  flex-direction: column-reverse;
+
+   margin: 10px auto 0 auto;         /* centers the swiper horizontally */
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * --------------------------------
+ * HERO SLIDES
+ * --------------------------------
+ */
+.hero-slide,
+.hero-img {
+  width: 1000px;
+  height: 100%;
+}
+
+.hero-img {
+  object-fit: cover;       /* fills container without distortion */
+  border-radius: 10px;     /* optional rounded edges */
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * --------------------------------
+ * SLIDE CONTENT (Overlay Text)
+ * --------------------------------
+ */
+.slide-content {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.slide-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.slide-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.shop-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: #218838;
+}
+
+/*
+ * --------------------------------
+ * SWIPER NAVIGATION & PAGINATION
+ * --------------------------------
+ */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background: #28a745;
+  opacity: 1;
+}
+
+/*
+ * --------------------------------
+ * RESPONSIVENESS
+ * --------------------------------
+ */
+@media (max-width: 768px) {
+  .hero-swiper-container {
+    height: 400px;
+  }
+  .slide-title {
+    font-size: 2rem;
+  }
+  .slide-subtitle {
+    font-size: 1.2rem;
+  }
+  .shop-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-swiper-container {
+    height: 300px;
+  }
+  .slide-title {
+    font-size: 1.5rem;
+  }
+  .slide-subtitle {
+    font-size: 1rem;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* hide arrows on small screens */
+  }
+}

@@ -1,0 +1,137 @@
+.product-card {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === Image === */
+.product-image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+/* === Title === */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* === Price Section === */
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* spacing between old and new */
+  margin: 8px 0;
+}
+
+.product-price .old {
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.product-price .new {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+/* Discount badge */
+.discount-badge {
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+/* === Cart Controls === */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.cart-controls button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-controls button:active {
+  transform: scale(0.9);
+}
+
+.cart-controls .decrease {
+  background: #e5e5e5;
+  color: #333;
+}
+
+.cart-controls .decrease:hover {
+  background: #d4d4d4;
+}
+
+.cart-controls .increase {
+  background: #22c55e;
+  color: #fff;
+}
+
+.cart-controls .increase:hover {
+  background: #16a34a;
+}
+
+/* === Add to cart button === */
+.add-to-cart {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #16a34a;
+}
