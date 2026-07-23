@@ -1,9 +1,8 @@
 import axios from "axios";
-import { data } from "react-router-dom";
 
 // ================= BASE API INSTANCE =================
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // ✅ Backend base URL
+  baseURL: "http://localhost:9000", // ✅ Backend base URL
 });
 
 // Attach token automatically for protected routes
@@ -20,20 +19,20 @@ API.interceptors.request.use(
 // ==================== AUTH ====================
 export const signup = (data) => API.post("/auth/signup", data);
 export const login = (data) => API.post("/auth/login", data);
-export const forgotPassword = (data) => API.post("/auth/forgot-password", data);
+export const forgotPassword = (data) => API.post("/forgot-password/request", data);
 
 
 // If backend expects token in body:
 export const resetPassword = (token, data) =>
-  API.post("/auth/reset-password", { token, ...data });
+  API.post("/forgot-password/reset", { otp: token, ...data });
 // If backend expects token in URL, switch back:
-// API.post(`/auth/reset-password/${token}`, data);
+// API.post(`/forgot-password/reset/${token}`, data);
 
 // ==================== USERS ====================
 export const getUserProfile = () => API.get("/users/profile");
 export const updateUserProfile = (data) => API.put("/users/profile", data);
 export const addUserAddress = (data) => API.post("/users/address", data);
-export const getUserProfileByUsername =(data)=>API.get("users/profile",data)
+export const getUserProfileByUsername = (data) => API.get("users/profile", data)
 
 export const getAllUsers = () => API.get("/users");
 export const deleteUser = (id) => API.delete(`/users/${id}`);

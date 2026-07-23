@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // src/context/CartContext.js
 import { createContext, useContext, useState, useEffect } from "react";
 import productsData from "../data/Product.json"; // adjust path
@@ -57,15 +58,15 @@ export function CartProvider({ children }) {
     );
   };
 
-const decreaseQty = (id) => {
-  setCart((prev) =>
-    prev
-      .map((item) =>
-        item.id === id ? { ...item, qty: Math.max(item.qty - 1, 0) } : item
-      )
-      .filter((item) => item.qty > 0)
-  );
-};
+  const decreaseQty = (id) => {
+    setCart((prev) =>
+      prev
+        .map((item) =>
+          item.id === id ? { ...item, qty: Math.max(item.qty - 1, 0) } : item
+        )
+        .filter((item) => item.qty > 0)
+    );
+  };
   const clearCart = () => {
     setCart([]);
     localStorage.removeItem("cart");

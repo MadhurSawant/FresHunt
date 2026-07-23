@@ -5,6 +5,16 @@ const cors = require("cors");
 const Razorpay = require("razorpay");
 const crypto = require("crypto")
 const nodemailer = require("nodemailer");
+const fs = require("fs");
+const path = require("path");
+
+const RAZORPAY_KEY_ID = "rzp_test_YourKeyHere";
+const RAZORPAY_KEY_SECRET = "YourSecretHere";
+
+const razorpay = new Razorpay({
+  key_id: RAZORPAY_KEY_ID,
+  key_secret: RAZORPAY_KEY_SECRET,
+});
 
 const { Schema, model } = mongoose;
 
@@ -132,7 +142,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "madhur.sawant0608@gmail.com", // 🔹 replace with your Gmail
-    pass: "uzxo tpkl ycbe aydl", // 🔹 use an App Password (not real password)
+    pass: "", // 🔹 use an App Password (not real password)
   },
 });
 
@@ -492,7 +502,7 @@ app.post("/users/username/:username/orders", async (req, res) => {
       paymentMode,
       address,
       otp,
-      
+
     };
 
     // Update loyalty points balance
@@ -514,7 +524,7 @@ app.post("/users/username/:username/orders", async (req, res) => {
   }
 });
 
-  
+
 
 // Get all orders for a username
 app.get("/users/username/:username/orders", async (req, res) => {
@@ -730,6 +740,111 @@ app.post("/verify-payment", async (req, res) => {
 });
 
 
+// ------------------ PRODUCT REVIEW ROUTES (JSON Persistence) ------------------
+
+const PRODUCT_DATA_PATH = path.join(__dirname, "../Cutomer-GUI/my-app/src/data/Product.json");
+
+// Helper to read product data
+const readProductData = () => {
+  const rawData = fs.readFileSync(PRODUCT_DATA_PATH, "utf8");
+  return JSON.parse(rawData);
+};
+
+// Helper to write product data
+const writeProductData = (data) => {
+  fs.writeFileSync(PRODUCT_DATA_PATH, JSON.stringify(data, null, 2));
+};
+
+// ✅ Get all products
+app.get("/products", (req, res) => {
+  try {
+    const productsData = readProductData();
+    res.json(productsData);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ✅ Add Review
+app.post("/products/:category/:id/reviews", (req, res) => {
+  try {
+    const { category, id } = req.params;
+    const newReview = req.body;
+    const productsData = readProductData();
+
+    if (!productsData[category]) {
+      return res.status(404).json({ error: "Category not found" });
+    }
+
+    const product = productsData[category].find((p) => p.id === parseInt(id));
+    if (!product) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+
+    // Ensure reviews array exists
+    if (!product.reviews) product.reviews = [];
+
+    // Assign reviewId if not provided
+    if (!newReview.reviewId) {
+      newReview.reviewId = product.reviews.length > 0
+        ? Math.max(...product.reviews.map(r => r.reviewId)) + 1
+        : 1;
+    }
+
+    product.reviews.push(newReview);
+    writeProductData(productsData);
+
+    res.json({ message: "Review added successfully", reviews: product.reviews });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ✅ Update Review
+app.put("/products/:category/:id/reviews/:reviewId", (req, res) => {
+  try {
+    const { category, id, reviewId } = req.params;
+    const updatedReview = req.body;
+    const productsData = readProductData();
+
+    if (!productsData[category]) return res.status(404).json({ error: "Category not found" });
+
+    const product = productsData[category].find((p) => p.id === parseInt(id));
+    if (!product) return res.status(404).json({ error: "Product not found" });
+
+    const reviewIndex = product.reviews.findIndex(r => r.reviewId === parseInt(reviewId));
+    if (reviewIndex === -1) return res.status(404).json({ error: "Review not found" });
+
+    product.reviews[reviewIndex] = { ...product.reviews[reviewIndex], ...updatedReview };
+    writeProductData(productsData);
+
+    res.json({ message: "Review updated successfully", reviews: product.reviews });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ✅ Delete Review
+app.delete("/products/:category/:id/reviews/:reviewId", (req, res) => {
+  try {
+    const { category, id, reviewId } = req.params;
+    const productsData = readProductData();
+
+    if (!productsData[category]) return res.status(404).json({ error: "Category not found" });
+
+    const product = productsData[category].find((p) => p.id === parseInt(id));
+    if (!product) return res.status(404).json({ error: "Product not found" });
+
+    product.reviews = product.reviews.filter(r => r.reviewId !== parseInt(reviewId));
+    writeProductData(productsData);
+
+    res.json({ message: "Review deleted successfully", reviews: product.reviews });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
 // ------------------ SERVER ------------------
 mongoose
   .connect("mongodb://127.0.0.1:27017/freshuntDB")
@@ -737,6 +852,5 @@ mongoose
     console.log("✅ MongoDB connected");
     app.listen(9000, () => console.log("🚀 Server running on port 9000"));
   })
-  .catch((err) => console.error("MongoDB connection error:", err)); 
-  
-  
+  .catch((err) => console.error("MongoDB connection error:", err));
+

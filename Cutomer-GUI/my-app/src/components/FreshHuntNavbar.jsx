@@ -65,7 +65,7 @@ function FreshHuntNavbar() {
     setSuggestions([]);
   };
 
-  const handleShow = () => setShowCart(true);
+  // const handleShow = () => setShowCart(true);
   const handleClose = () => setShowCart(false);
 
   return (
@@ -198,7 +198,7 @@ function FreshHuntNavbar() {
                   </Link>
                 </Nav.Item> */}
 
-              
+
               </Nav>
             </div>
           </Container>

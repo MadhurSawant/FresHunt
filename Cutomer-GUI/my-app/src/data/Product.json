@@ -9,8 +9,29 @@
       "image": "/assets/vegetables/tomatoes.jpg",
       "category": "vegetables",
       "stock": 120,
-      "variants": [{ "type": "500g", "price": 35 }],
-      "description": "Juicy and fresh red tomatoes, perfect for salads and cooking."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 35
+        }
+      ],
+      "description": "Juicy and fresh red tomatoes, perfect for salads and cooking.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "Madhur",
+          "rating": 4,
+          "comment": "Very Good",
+          "date": "2026-03-03",
+          "reviewId": 2
+        }
+      ]
     },
     {
       "id": 2,
@@ -21,8 +42,36 @@
       "image": "/assets/vegetables/spinach.jpg",
       "category": "vegetables",
       "stock": 100,
-      "variants": [{ "type": "500g", "price": 40 }],
-      "description": "Green leafy spinach, full of iron and nutrients."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 40
+        }
+      ],
+      "description": "Green leafy spinach, full of iron and nutrients.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "V",
+          "rating": 1,
+          "comment": "Very bad",
+          "date": "2026-03-10",
+          "reviewId": 2
+        },
+        {
+          "userName": "Madhur",
+          "rating": 3,
+          "comment": "It was very okay",
+          "date": "2026-04-22",
+          "reviewId": 3
+        }
+      ]
     },
     {
       "id": 3,
@@ -33,8 +82,22 @@
       "image": "/assets/vegetables/potatoes.jpg",
       "category": "vegetables",
       "stock": 200,
-      "variants": [{ "type": "500g", "price": 30 }],
-      "description": "Fresh potatoes, great for curries, fries, and more."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 30
+        }
+      ],
+      "description": "Fresh potatoes, great for curries, fries, and more.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     },
     {
       "id": 4,
@@ -45,8 +108,29 @@
       "image": "/assets/vegetables/carrots.jpg",
       "category": "vegetables",
       "stock": 150,
-      "variants": [{ "type": "500g", "price": 45 }],
-      "description": "Crunchy orange carrots, rich in vitamin A."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 45
+        }
+      ],
+      "description": "Crunchy orange carrots, rich in vitamin A.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "madhur",
+          "rating": 1,
+          "comment": "very good",
+          "date": "2026-03-26",
+          "reviewId": 2
+        }
+      ]
     },
     {
       "id": 5,
@@ -57,8 +141,29 @@
       "image": "/assets/vegetables/cucumbers.jpg",
       "category": "vegetables",
       "stock": 110,
-      "variants": [{ "type": "500g", "price": 35 }],
-      "description": "Cool and refreshing cucumbers, ideal for salads."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 35
+        }
+      ],
+      "description": "Cool and refreshing cucumbers, ideal for salads.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "Geo",
+          "rating": 1,
+          "comment": "vey bad",
+          "date": "2026-03-30",
+          "reviewId": 2
+        }
+      ]
     }
   ],
   "fruits": [
@@ -71,8 +176,22 @@
       "image": "/assets/fruits/bananas.jpg",
       "category": "fruits",
       "stock": 200,
-      "variants": [{ "type": "500g", "price": 30 }],
-      "description": "Sweet and fresh bananas, rich in potassium and fiber."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 30
+        }
+      ],
+      "description": "Sweet and fresh bananas, rich in potassium and fiber.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     },
     {
       "id": 7,
@@ -83,8 +202,29 @@
       "image": "/assets/fruits/apples.jpg",
       "category": "fruits",
       "stock": 150,
-      "variants": [{ "type": "500g", "price": 65 }],
-      "description": "Fresh and crunchy apples, packed with vitamins."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 65
+        }
+      ],
+      "description": "Fresh and crunchy apples, packed with vitamins.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "Geo",
+          "rating": 2,
+          "comment": "Very bad product",
+          "date": "2026-03-10",
+          "reviewId": 2
+        }
+      ]
     },
     {
       "id": 8,
@@ -95,8 +235,29 @@
       "image": "/assets/fruits/mangoes.jpg",
       "category": "fruits",
       "stock": 90,
-      "variants": [{ "type": "500g", "price": 140 }],
-      "description": "Sweet and juicy mangoes, the king of fruits."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 140
+        }
+      ],
+      "description": "Sweet and juicy mangoes, the king of fruits.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "Madhur",
+          "rating": 1,
+          "comment": "Very Bad",
+          "date": "2026-03-10",
+          "reviewId": 2
+        }
+      ]
     },
     {
       "id": 9,
@@ -107,8 +268,22 @@
       "image": "/assets/fruits/oranges.jpg",
       "category": "fruits",
       "stock": 130,
-      "variants": [{ "type": "500g", "price": 100 }],
-      "description": "Citrus-rich oranges, full of vitamin C."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 100
+        }
+      ],
+      "description": "Citrus-rich oranges, full of vitamin C.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     },
     {
       "id": 10,
@@ -119,8 +294,22 @@
       "image": "/assets/fruits/grapes.jpg",
       "category": "fruits",
       "stock": 140,
-      "variants": [{ "type": "500g", "price": 90 }],
-      "description": "Sweet seedless grapes, perfect for snacking."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 90
+        }
+      ],
+      "description": "Sweet seedless grapes, perfect for snacking.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     }
   ],
   "meat": [
@@ -133,8 +322,29 @@
       "image": "/assets/meat/chicken-breast.jpg",
       "category": "meat",
       "stock": 80,
-      "variants": [{ "type": "500g", "price": 180 }],
-      "description": "Skinless chicken breast, high in protein and perfect for grilling."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 180
+        }
+      ],
+      "description": "Skinless chicken breast, high in protein and perfect for grilling.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "Geo",
+          "rating": 2,
+          "comment": "Not very Good",
+          "date": "2026-03-03",
+          "reviewId": 2
+        }
+      ]
     },
     {
       "id": 12,
@@ -145,8 +355,36 @@
       "image": "/assets/meat/mutton.jpg",
       "category": "meat",
       "stock": 60,
-      "variants": [{ "type": "500g", "price": 350 }],
-      "description": "Fresh mutton curry cut, tender and flavorful."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 350
+        }
+      ],
+      "description": "Fresh mutton curry cut, tender and flavorful.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        },
+        {
+          "userName": "Madhur",
+          "rating": 5,
+          "comment": "Very bad not proper Qualtity",
+          "date": "2026-03-04",
+          "reviewId": 2
+        },
+        {
+          "userName": "bob",
+          "rating": 2,
+          "comment": "Very low qualtiy of  product is there",
+          "date": "2026-03-29",
+          "reviewId": 3
+        }
+      ]
     },
     {
       "id": 13,
@@ -157,8 +395,22 @@
       "image": "/assets/meat/prawns.jpg",
       "category": "meat",
       "stock": 70,
-      "variants": [{ "type": "500g", "price": 400 }],
-      "description": "Fresh prawns, ideal for curries and fried dishes."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 400
+        }
+      ],
+      "description": "Fresh prawns, ideal for curries and fried dishes.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     },
     {
       "id": 14,
@@ -169,8 +421,22 @@
       "image": "/assets/meat/eggs.jpg",
       "category": "meat",
       "stock": 300,
-      "variants": [{ "type": "500g", "price": 70 }],
-      "description": "Farm-fresh eggs, rich in protein."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 70
+        }
+      ],
+      "description": "Farm-fresh eggs, rich in protein.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     },
     {
       "id": 15,
@@ -181,8 +447,22 @@
       "image": "/assets/meat/fish.jpg",
       "category": "meat",
       "stock": 100,
-      "variants": [{ "type": "500g", "price": 250 }],
-      "description": "Fresh fish fillets, perfect for grilling or frying."
+      "variants": [
+        {
+          "type": "500g",
+          "price": 250
+        }
+      ],
+      "description": "Fresh fish fillets, perfect for grilling or frying.",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "userName": "Alex M.",
+          "rating": 5,
+          "comment": "Very fresh and great quality!",
+          "date": "2026-03-03"
+        }
+      ]
     }
   ]
 }

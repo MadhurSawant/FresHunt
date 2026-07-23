@@ -17,7 +17,7 @@ const UPIForm = () => {
   // 🔹 Validate UPI and amount
   const validate = () => {
     let newErrors = {};
-    if (!/^[\w.\-]+@[\w]+$/.test(upiData.upiId))
+    if (!/^[\w.-]+@[\w]+$/.test(upiData.upiId))
       newErrors.upiId = "Enter a valid UPI ID (e.g. name@upi)";
     if (!upiData.amount || isNaN(upiData.amount) || Number(upiData.amount) <= 0)
       newErrors.amount = "Enter a valid amount";
